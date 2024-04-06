@@ -1,0 +1,50 @@
+form{
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #081b29;
+    width: 90%;
+    min-height: 300px;
+
+}
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 5px;
+}
+.question{
+    color: #f64c72;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.options{
+    font-size: 22px;
+    color: aliceblue;
+}
+.options input{
+    display: inline;
+    width: fit-content;
+    height: 10px;
+}
+.form-unit-s{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 3px;
+}
+
+form .form-unit{
+    height: 90px;
+}
+form label {
+    color: white;
+    font-size: 25px;
+}
+.login_{
+    width: 45%;
+}

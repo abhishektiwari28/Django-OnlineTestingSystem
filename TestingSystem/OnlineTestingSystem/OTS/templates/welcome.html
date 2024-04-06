@@ -1,0 +1,21 @@
+{% extends 'master.html' %}
+
+{% load static %}
+
+{% block titles %} Welcome {% endblock %}
+
+{% block top %} 
+    <a href="{% url 'OTS:registrationForm'%}">Signup</a>
+    <a href="{% url 'OTS:login'%}">login</a>
+{% endblock %}
+
+{% block content %} 
+<div class="welcome_div">
+    <div class="text-animate">
+    <p class="welcome_content" id="h">Welcome to the Online Testing System</p>
+    </div>
+    <p class="welcome_content">It's a normal testing System that takes the test of the candidates. Candidate can see and evaluate their performance and progress.</p>
+    <p class="welcome_redirect">For attempting the test please <a href="{% url 'OTS:login'%}">login</a> or <a href="{% url 'OTS:registrationForm'%}">Signup</a> with your account.</p>
+</div>
+
+{% endblock %}

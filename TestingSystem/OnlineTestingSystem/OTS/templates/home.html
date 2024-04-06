@@ -1,0 +1,42 @@
+{% extends 'master.html' %}
+
+{% load static %}
+{% block titles %} HoMe Page{% endblock %}
+
+{% block top %} 
+    <a href="{% url 'OTS:home'%}">Home</a>
+    <a href="{% url 'OTS:logout'%}">logout</a>
+{% endblock %} 
+
+{% block content %} 
+    <div class="home-design">
+        <div class="home-design-inner">
+    <h1>Welcome {{ request.session.name }}, to your home page.</h1>
+        </div>
+    <div class="home-design-inner">
+    <div class="button-link">
+        <a href="{% url 'OTS:testpaper' %}?n=1">Test of 1 question</a>
+    </div>
+    <div class="button-link">
+        <a href="{% url 'OTS:testpaper' %}?n=3">Test of 3 question</a>
+    </div>
+    </div>
+    <div class="home-design-inner">
+    <div class="button-link">
+        <a href="{% url 'OTS:testpaper' %}?n=5">Test of 5 question</a>
+    </div>
+    <div class="button-link">
+        <a href="{% url 'OTS:testpaper' %}?n=10">Test of 10 question</a>
+    </div>
+</div>
+<div class="home-design-inner">
+    <div class="button-link">
+        <a href="{% url 'OTS:testpaper' %}?n=20">Test of 20 question</a>
+    </div>
+
+    <div class="button-link">
+        <a href="{% url 'OTS:testHistory' %}">Test History</a>
+    </div>
+</div>
+    </div>
+{% endblock %} 
